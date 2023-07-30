@@ -5,3 +5,10 @@ const reviewsScroll=()=> {
 }
 reviewsScroll();
 
+let destinations = document.getElementById('destinations');
+destinations.scroll(-2000, 0);
+destinations.scroll({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+});
