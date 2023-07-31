@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    /* Disable scrollbar Edge */
+    width: 0;
+}
+
+@-moz-document url-prefix() {
+
+    /* Disable scrollbar Firefox */
+    html {
+        scrollbar-width: none;
+    }
+}
+
+.scrolling-wrapper {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #0E1C24;
+    font-family: Nunito;
+    color: #FFFFFF;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sections-names {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: clamp(30px, 6.5vw, 90px);
+}
