@@ -51,5 +51,5 @@ li {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-    padding-top: clamp(30px, 6.5vw, 90px);
+    margin-top: clamp(30px, 6.5vw, 90px);
 }

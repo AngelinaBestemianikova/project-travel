@@ -1,0 +1,44 @@
+.sections-names{
+    margin-top: 30px;
+    padding: 0 35px;
+}
+
+.recommended-sights__content{
+    padding-right: clamp(15px, 6vw, 80px);
+    margin-bottom: clamp(15px, 6vw, 80px);
+    margin-top: clamp(30px, 5vw, 60px);
+}
+
+.recommended-sights__image{
+    float: right;
+    margin-left: clamp(15px, 6vw, 80px);
+    margin-bottom: 15px;   
+}
+
+.recommended-sights__text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.recommended-sights__text:nth-child(n+2){
+    margin-bottom: clamp(15px, 3vw, 25px);
+}
+
+@media (max-width: 700px) {
+
+    .recommended-sights__content {
+        display: grid;
+        justify-content: center;
+        margin-top: clamp(30px, 5vw, 60px);
+    }
+
+    .recommended-sights__image{
+        order: 1;
+        width: clamp(280px, 60vw, 440px);
+        margin-bottom: clamp(15px, 3vw, 25px);;
+    }
+
+    .recommended-sights__description{
+        order: 2; 
+    }
+}
