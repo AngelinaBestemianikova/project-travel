@@ -495,7 +495,7 @@ li {
 }
 
 .reviews-section__wrapper {
-    height: 545px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -510,7 +510,7 @@ li {
 }
 
 .reviews-section__reviews:nth-child(even) {
-    margin-top: clamp(20px, 6.5vw, 100px);
+    margin-top: 20px;
 }
 
 .reviews-section__reviews:nth-child(n+3) {
@@ -733,12 +733,12 @@ footer {
 
 .footer__copyright {
     display: flex;
-    margin-top: clamp(40px, 9vw, 80px);
+    margin-top: clamp(5px, 3vw, 40px);
     font-size: clamp(12px, 1.5vw, 18px);
     font-weight: 400;
     padding-left: clamp(15px, 6vw, 80px);
     padding-right: clamp(15px, 6vw, 80px);
-    margin-bottom: clamp(30px, 4.5vw, 40px);
+    margin-bottom: clamp(15px, 2vw, 40px);
 }
 
 .footer__follow-images {
