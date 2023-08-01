@@ -34,7 +34,7 @@
 
     .recommended-sights__image{
         order: 1;
-        width: clamp(280px, 60vw, 440px);
+        width: clamp(280px, 85vw, 440px);
         margin-bottom: clamp(15px, 3vw, 25px);;
     }
 
