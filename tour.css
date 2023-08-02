@@ -1,0 +1,126 @@
+.sections-names{
+    text-transform: none;
+    margin-top: 30px;
+}
+
+body{
+    background-size: cover;
+    background-color: #0E1C24;
+}
+
+.tour__description{
+    display: flex;
+    padding-left: clamp(15px, 6vw, 80px);
+    padding-right: clamp(15px, 6vw, 80px);
+    margin-top: clamp(30px, 6vw, 65px);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tour__text{
+    margin-right: clamp(85px, 15vw, 250px);
+}
+
+.tour__info{
+    display: flex;
+    margin-bottom: 10px;
+    white-space: nowrap; 
+}
+
+.tour__info-number{
+    margin-left: clamp(5px, 2vw, 22px);
+}
+
+.tour__all-days{
+    padding-left: clamp(15px, 6vw, 80px);
+    padding-right: clamp(15px, 6vw, 80px);
+    margin-top: 40px;
+}
+
+.tour__day{
+    display: flex;
+    margin-bottom: 20px;
+}
+.tour__day:last-child{
+    margin-bottom: 50px;
+}
+
+.tour__day-number{
+    font-size: 24px;
+    font-weight: 600;
+    min-width: 240px;
+    margin-right: clamp(70px, 9vw, 115px);
+    white-space: nowrap; 
+}
+
+.tour__day-description{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tour__act-button{
+    display: grid;
+    justify-content: center;
+}
+
+.tour__button{
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.tour__button:hover{
+    font-weight: 700;
+}
+
+@media (max-width: 800px){
+
+    .tour__description{
+        display: grid;
+    }
+
+    .tour__text{
+        margin-right: 0;
+    }
+
+    .tour__full-info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .tour__info{
+        margin-bottom: 0;
+    }
+    
+    .tour__all-days{
+        margin-top: 60px;
+    }
+
+    .tour__day{
+        display: grid;
+    }
+
+    .tour__day-number{
+        margin-bottom: 10px;
+    }
+
+    .tour__day{
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 500px){
+    .tour__day-description,
+    .tour__text{
+        font-size: clamp(15px, 1.7vw, 18px);;
+    }
+}
