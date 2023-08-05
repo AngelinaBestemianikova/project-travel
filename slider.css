@@ -1,0 +1,100 @@
+.sections-names {
+    margin-top: 30px;
+}
+
+.tour__images {
+    display: flex;
+}
+
+.tour__content {
+    width: clamp(280px, 70vw, 740px);
+}
+
+.tour__slider-button:first-child {
+    padding-left: clamp(15px, 6vw, 80px);
+    padding-right: 13px;
+}
+
+.tour__slider-button:last-child {
+    padding-left: 13px;
+    padding-right: clamp(15px, 6vw, 80px);
+}
+
+.tour__all {
+    display: grid;
+    place-items: center;
+}
+
+.tour__info {
+    display: flex;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.tour__info-number {
+    margin-left: clamp(5px, 1.8vw, 15px);
+    font-size: 12px;
+}
+
+.tour__slider-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: clamp(280px, 70vw, 740px);
+}
+
+.tour__slider-two-arrow {
+    margin-top: clamp(40px, 7vw, 60px);
+    margin-bottom: clamp(40px, 7vw, 60px);
+    display: flex;
+    justify-content: center;
+}
+
+.tour__name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 25px;
+}
+
+.tour__text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: clamp(100px, 15vw, 140px);
+}
+
+.tour__text-number {
+    display: flex;
+    justify-content: space-between;
+    width: clamp(200px, 70vw, 740px);
+}
+
+@media (max-width: 699.9px) {
+
+    .tour__slider-button {
+        display: none;
+    }
+
+    .tour__text {
+        margin-right: 0px;
+    }
+
+    .tour__text-number {
+        display: grid;
+    }
+
+    .tour__full-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .tour__info {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 700px) {
+    .tour__slider-arrow {
+        display: none;
+    }
+}
