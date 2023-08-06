@@ -4,6 +4,7 @@
 
 .tour__images {
     display: flex;
+    place-items: center;
 }
 
 .tour__content {
