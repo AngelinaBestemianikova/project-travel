@@ -36,6 +36,7 @@
 .about-section__second-image {
     width: clamp(280px, 42vw, 520px);
     height: clamp(200px, 34vw, 310px);
+    margin: auto 0;
 }
 
 @media (max-width: 700px) {

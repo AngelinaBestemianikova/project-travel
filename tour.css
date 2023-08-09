@@ -6,6 +6,7 @@
 body{
     background-size: cover;
     background-color: #0E1C24;
+    background-position: center;
 }
 
 .tour__description{

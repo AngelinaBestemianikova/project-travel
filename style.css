@@ -3,14 +3,19 @@
     width: 100%;
     background: #0E1C24 url("imgs/bg1.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .home-section__header {
     display: flex;
     width: 100%;
-    padding-top: 35px;
+    padding-top: px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+.menu{
+    padding-right: clamp(75px, 12vw, 200px);
 }
 
 .home-section__logo {
@@ -18,17 +23,41 @@
     padding-left: clamp(25px, 3.5vw, 45px);
 }
 
-@media (min-width: 600px) {
-
-    .home-section__navbar-image {
-        display: none;
-    }
+#burger, [for=burger]{
+    display: none;
 }
 
-@media (max-width: 599.9px) {
+@media  (max-width: 600px){
 
-    .menu-list {
+    [for=burger]{
+        display: block;
+        position: fixed;
+        right: clamp(35px, 10vw, 50px);
+        text-align: center;
+        top: 30px;
+    }
+
+    .menu{
         display: none;
+        position: fixed;
+        right: 100px;
+        top: 55px;
+        background-color: #D0C8AD;
+        border-radius: 8px;
+        padding: 7px 10px 10px;
+    }
+
+    .menu__link:hover {
+        color: #000000;
+    }
+
+    .menu__item{
+        color:#000000;
+    }
+
+    #burger:checked~.menu{
+        display: block;  
+        width: 100px;   
     }
 }
 
@@ -47,9 +76,13 @@
     margin-right: 0px;
 }
 
-.menu__link:hover {
-    color: #D0C8AD;
+@media (min-width: 601px){
+
+    .menu__link:hover {
+        color: #D0C8AD;
+    }
 }
+
 
 .menu__link {
     color: #FFFFFF;
@@ -62,12 +95,11 @@
     margin-right: 24px;
 }
 
-.home-section__navbar-image:hover .menu-navbar {
-    display: flex;
-}
-
 .home-section__search {
+    position: fixed;
     padding-right: clamp(25px, 6.5vw, 81px);
+    right: 0px;
+    top: 30px;
 }
 
 .home-section__content {
@@ -467,6 +499,7 @@
     width: 95px;
     height: 95px;
     margin-right: clamp(22px, 3.3vw, 45px);
+    user-select: none;
 }
 
 .reviews__name {
@@ -595,6 +628,7 @@
 .contact-section__image {
     width: clamp(50px, 33.7vw, 400px);
     margin-bottom: 40px;
+    user-select: none;
 }
 
 @media (max-width: 900px) {

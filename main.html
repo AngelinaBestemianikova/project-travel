@@ -15,8 +15,10 @@
         <div class="container">
             <header class="home-section__header">
                 <img class="home-section__logo" src="imgs/logo.svg" alt="logo">
+                <input type="checkbox" id="burger">
+                <label for="burger"><img class="home-section__navbar-image" src="imgs/burger.svg" alt="menu"></label>
 
-                <nav class="menu-list">
+                <nav class="menu">
                     <ul class="home-section__menu">
                         <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
                         <li class="menu__item"><a class="menu__link" href="#destinations">Destinations</a></li>
@@ -27,15 +29,16 @@
                 </nav>
 
                 <div>
-                    <img class="home-section__navbar-image" src="imgs/burger.svg" alt="menu">
+                    
                     <img class="home-section__search" src="imgs/search.svg" alt="search">
                 </div>
+                
             </header>
 
             <div class="home-section__content">
                 <p class="home-section__name">Indonesia</p>
                 <p class="home-section__description">Find your adventure with us</p>
-                <button class="home-section__button">Book a tour</button>
+                <a href="./slider Island Treasure.html"><button class="home-section__button">Book a tour</button></a>
             </div>
         </div>
 
@@ -155,14 +158,14 @@
         </div>
 
         <div class="popular-tours__act-button">
-            <button class="popular-tours__button">See all</button>
+            <a href="./slider Island Treasure.html"><button class="popular-tours__button">See all</button></a>
         </div>
 
     </section>
 
     <section class="video-section">
 
-            <video controls class="video-section__video">
+            <video controls class="video-section__video" autoplay muted placeinline>
                 <source src="imgs/indonesia.mp4"/>
             </video>
 

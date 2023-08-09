@@ -7,8 +7,18 @@
     place-items: center;
 }
 
+.slider__links{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
 .tour__content {
     width: clamp(280px, 70vw, 740px);
+}
+
+.tour__slider-button,
+.tour__slider-arrow{
+    user-select: none;
 }
 
 .tour__slider-button:first-child {
@@ -57,6 +67,10 @@
     margin: 10px 0 25px;
 }
 
+.tour__name:hover{
+    font-weight: 700;
+}
+
 .tour__text {
     font-size: 12px;
     font-weight: 400;
@@ -95,6 +109,7 @@
 }
 
 @media (min-width: 700px) {
+    
     .tour__slider-arrow {
         display: none;
     }
