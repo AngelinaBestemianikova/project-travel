@@ -3,7 +3,7 @@
     width: 100%;
     background: #0E1C24 url("imgs/bg1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 .home-section__header {
