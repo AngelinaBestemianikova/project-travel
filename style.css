@@ -9,13 +9,9 @@
 .home-section__header {
     display: flex;
     width: 100%;
-    padding-top: px;
+    padding-top: 15px;
     align-items: center;
     justify-content: space-between;    
-}
-
-.menu{
-    padding-right: clamp(75px, 12vw, 200px);
 }
 
 .home-section__logo {
@@ -34,7 +30,7 @@
         position: fixed;
         right: clamp(35px, 10vw, 50px);
         text-align: center;
-        top: 30px;
+        top: 20px;
     }
 
     .menu{
@@ -83,7 +79,6 @@
     }
 }
 
-
 .menu__link {
     color: #FFFFFF;
     text-decoration: none;
@@ -96,10 +91,7 @@
 }
 
 .home-section__search {
-    position: fixed;
     padding-right: clamp(25px, 6.5vw, 81px);
-    right: 0px;
-    top: 30px;
 }
 
 .home-section__content {

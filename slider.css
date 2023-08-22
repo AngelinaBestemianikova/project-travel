@@ -2,6 +2,10 @@
     margin-top: 30px;
 }
 
+.cross{
+   padding-left: clamp(280px, 69vw, 730px);
+}
+
 .tour__images {
     display: flex;
     place-items: center;
@@ -50,7 +54,7 @@
 .tour__slider-image {
     display: block;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 15px;
     width: clamp(280px, 70vw, 740px);
 }
 
