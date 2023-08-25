@@ -326,6 +326,12 @@
     margin-bottom: clamp(20px, 4.5vw, 50px);
 }
 
+.popular-tours__links{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
 .popular-tours__tour-name:hover {
     font-weight: 700;
     cursor: pointer;
