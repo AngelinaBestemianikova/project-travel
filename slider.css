@@ -108,6 +108,8 @@
 
 .tour__button:hover{
     font-weight: 700;
+    background: #D0C8AD;
+    color: #0E1C24;
 }
 
 @media (max-width: 699.9px) {
