@@ -59,8 +59,6 @@
 }
 
 .tour__slider-two-arrow {
-    margin-top: clamp(40px, 7vw, 60px);
-    margin-bottom: clamp(40px, 7vw, 60px);
     display: flex;
     justify-content: center;
 }
@@ -87,6 +85,31 @@
     width: clamp(200px, 70vw, 740px);
 }
 
+
+.tour__act-button{
+    display: grid;
+    justify-content: center;
+}
+
+.tour__button{
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 200px;
+    height: 45px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-top: clamp(40px, 6vw, 60px);
+}
+
+.tour__button:hover{
+    font-weight: 700;
+}
+
 @media (max-width: 699.9px) {
 
     .tour__slider-button {
@@ -109,6 +132,15 @@
 
     .tour__info {
         margin-bottom: 0;
+    }
+
+    .tour__slider-two-arrow {
+        margin-bottom: clamp(40px, 7vw, 60px);
+        margin-top: clamp(40px, 7vw, 60px);
+    }
+
+    .tour__button {
+        margin-bottom: 0px;
     }
 }
 
